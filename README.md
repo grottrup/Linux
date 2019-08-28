@@ -2,6 +2,9 @@
 ## File & Directory operations
 
 * Display the full path of the current folder?
+```
+pwd
+```
 * What does the “∼” mean in relation to a path in Unix?
 * Get a list of all ﬁles and folders in the current folder?
 * Change directory to /home/stud?
