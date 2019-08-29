@@ -100,3 +100,9 @@ date
 * What happens when you run dmesg?
 * Extending the above like this: dmesg|less, what does it do?
 * Determine the CPU type by looking the directory /proc
+
+## SCP
+
+``` bash
+scp stud@10.9.8.1:/home/stud/hello.txt ~
+```
