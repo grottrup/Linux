@@ -101,7 +101,14 @@ date
 * Extending the above like this: dmesg|less, what does it do?
 * Determine the CPU type by looking the directory /proc
 
-## SCP
+## SSH
+
+``` bash
+ping 10.9.8.2
+```
+``` bash
+ssh root@10.9.8.2
+```
 
 ``` bash
 scp stud@10.9.8.1:/home/stud/hello.txt ~
