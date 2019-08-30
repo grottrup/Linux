@@ -104,7 +104,7 @@ kill -9 {pid}
 ```
 replace {pid} with kate PID
 
-Now, write a small shell script that echos "hello world" every second. Search for bash-scripts, while-do, sleep and echo. Remember to make your shell script executable using the program chmod.
+* Now, write a small shell script that echos "hello world" every second. Search for bash-scripts, while-do, sleep and echo. Remember to make your shell script executable using the program chmod.
 
 * Which chmod command?
 * Shell script?
