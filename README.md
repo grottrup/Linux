@@ -57,7 +57,11 @@ sudo snap install code --classic
 echo "hello there" > text2
 ```
 
-* Append 1234567890 to file text1 using echo? **(Todo)**
+* Append 1234567890 to file text1 using echo?
+
+``` bash
+echo 1234567890 >> text1
+```
 * Dump the contents of text1 to the terminal window?
 
 ``` bash
