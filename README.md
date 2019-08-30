@@ -83,7 +83,13 @@ rm text2 text2
 rm /home/stud/test -R
 ```
 
-Explain how ﬁle permissions work - check the chmod and read its man page **(Todo)**
+* Explain how ﬁle permissions work - check the chmod and read its man page
+4 = read
+2 = write
+1 = execute
+
+Permissions are given to "owner", "group" and "all" as a combination of those numbers - fx 5 is "read and execute", and 6 and "read and write"
+
 
 ## Program control
 
