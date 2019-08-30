@@ -36,10 +36,14 @@ cd test
 ```
 
 * Create a ﬁle text1 containing "hello there" using Kate?
-* Install Kate if it is not present? (Or Atom if you prefer)
+* Install Kate if it is not present? (Or Atom or Code if you prefer)
 
 ``` bash
 sudo apt install kate
+```
+
+``` bash
+sudo snap install code --classic
 ```
 
 * Create a ﬁle text2 containing "hello there" using echo?
