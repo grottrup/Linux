@@ -88,8 +88,7 @@ rm /home/stud/test -R
 2 = write
 1 = execute
 
-Permissions are given to "owner", "group" and "all" as a combination of those numbers - fx 5 is "read and execute", and 6 and "read and write"
-
+Permissions are given to "owner", "group" and "all" as a combination of those numbers - that is 5 is "read and execute", and 6 is "read and write". "777" is "read write execute" for owner, group and all
 
 ## Program control
 
