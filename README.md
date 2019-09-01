@@ -36,10 +36,11 @@
   ```
 
 * Create a ﬁle text1 containing "hello there" using Kate?
+  The following will open the Kate GUI with a new file called "text1"
   ```
   kate text1
   ```
-  write "hello there" in the GUI and then save the file
+  We write "hello there" in the GUI and then save the file.
 
 * Install Kate if it is not present? (Or Atom or Code if you prefer)
 
