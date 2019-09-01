@@ -9,7 +9,7 @@
 
 * What does the “∼” mean in relation to a path in Unix?
 
-It is the home dirctory of the current user
+  It is the home dirctory of the current user
 
 * Get a list of all ﬁles and folders in the current folder?
 
