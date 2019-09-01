@@ -3,9 +3,9 @@
 
 * Display the full path of the current folder?
 
-``` bash
-pwd
-```
+  ``` bash
+  pwd
+  ```
 
 * What does the “∼” mean in relation to a path in Unix?
 
@@ -13,96 +13,102 @@ It is the home dirctory of the current user
 
 * Get a list of all ﬁles and folders in the current folder?
 
-``` bash
-ls -a
-```
+  ``` bash
+  ls -a
+  ```
 
 * Change directory to /home/stud?
 
-``` bash
-cd ~
-```
+  ``` bash
+  cd ~
+  ```
 
 * Create a directory /home/stud/test?
 
-``` bash
-mkdir ~/test
-```
+  ``` bash
+  mkdir ~/test
+  ```
 
 * Change directory to the subdirectory /home/stud/test?
 
-``` bash
-cd test
-```
+  ``` bash
+  cd test
+  ```
 
 * Create a ﬁle text1 containing "hello there" using Kate?
-```
-kate text1
-```
-write "hello there" in the GUI and then save the file
+  ```
+  kate text1
+  ```
+  write "hello there" in the GUI and then save the file
 
 * Install Kate if it is not present? (Or Atom or Code if you prefer)
 
-``` bash
-sudo apt install kate
-```
+  ``` bash
+  sudo apt install kate
+  ```
 
-``` bash
-sudo snap install code --classic
-```
+  ``` bash
+  sudo snap install code --classic
+  ```
 
 * Create a ﬁle text2 containing "hello there" using echo?
 
-``` bash
-echo "hello there" > text2
-```
+  ``` bash
+  echo "hello there" > text2
+  ```
 
 * Append 1234567890 to file text1 using echo?
 
-``` bash
-echo 1234567890 >> text1
-```
+  ``` bash
+  echo 1234567890 >> text1
+  ```
+  
 * Dump the contents of text1 to the terminal window?
 
-``` bash
-cat text1
-```
+  ``` bash
+  cat text1
+  ```
 
 * Copy text1 to the directory /tmp?
-```
-cp ./text1 /tmp
-```
+  ``` bash
+  cp ./text1 /tmp
+  ```
 
 * Delete text1 and text2 in one go?
-```
-rm text2 text2
-```
+  ``` bash
+  rm ./text2 ./text2
+  ```
 
 * Delete the directory /home/stud/test?
-```
-rm /home/stud/test -R
-```
+  ``` bash
+  rm /home/stud/test -R
+  ```
 
 * Explain how ﬁle permissions work - check the chmod and read its man page
-4 = read
-2 = write
-1 = execute
 
-Permissions are given to "owner", "group" and "all" as a combination of those numbers - that is 5 is "read and execute", and 6 is "read and write". "777" is "read write execute" for owner, group and all
+  4 = read
+  2 = write
+  1 = execute
+
+  Permissions are given to "owner", "group" and "all" as a combination of those numbers - that is 5 is "read and execute", and 6 is "read and write". "777" is "read write execute" for owner, group and all
 
 ## Program control
 
 * Run the program Kate in the background
-```
-kate &
-```
+  ``` bash
+  kate &
+  ```
 
 * Now kill the program Kate you just started
-```
-pidof kate
-kill -9 {pid}
-```
-replace {pid} with kate PID
+  ``` bash
+  pidof kate
+  ```
+  will yield the PID of the process. This PID is also returned when creating the process.
+
+  ```
+  kill -9 {pid}
+  ```
+  replace {pid} with kate PID
 
 * Now, write a small shell script that echos "hello world" every second. Search for bash-scripts, while-do, sleep and echo. Remember to make your shell script executable using the program chmod.
 
