@@ -140,6 +140,23 @@ date
 ```
 
 * Find the IP address of the network adapter ens33xxx
+
+``` bash
+ifconfig
+```
+The command returns the following output:
+``` output
+ens33: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 192.168.78.128  netmask 255.255.255.0  broadcast 192.168.78.255
+        inet6 fe80::16ca:bed:14d5:8bbf  prefixlen 64  scopeid 0x20<link>
+        ether 00:50:56:3a:36:5f  txqueuelen 1000  (Ethernet)
+        RX packets 203796  bytes 259884129 (259.8 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 30760  bytes 2528912 (2.5 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+...
+```
+
 * Explain what the ﬁle /var/log/syslog does
 * Try using running less /var/log/syslog and read the manual for less. What is it good for?
 * What happens when you run dmesg?
