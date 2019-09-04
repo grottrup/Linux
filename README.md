@@ -123,14 +123,6 @@
 
 * Get a list of the currently running processes (programs)
 
-For user processes:??????????
-
-``` bash
-ps
-```
-
-For every process:
-
 ``` bash
 ps -e
 ```
@@ -161,10 +153,25 @@ ens33: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
 We can see the IP address is: ``192.168.78.128``.
 
 * Explain what the ﬁle /var/log/syslog does
+    Pretty much everything happening on the Ubuntu system goes into the system log. If you can't find it in other logs, you will probably be able to find it here. 
+    
 * Try using running less /var/log/syslog and read the manual for less. What is it good for?
+   Less opens the log for viewing in the terminal, which is especially cool for communicating with other devices such as the Raspberry Pi. A cool thing about Less is that it doesn\'t read the whole file at once, but only a certain amount of lines.
+
 * What happens when you run dmesg?
+   We see the kernel ring buffer - a buffer containing messages relating to the kernel.
+   
 * Extending the above like this: dmesg|less, what does it do?
+   It opens the kernel ring buffer in less, which makes it easier to navigate.
+
 * Determine the CPU type by looking the directory /proc
+  ```
+  cat /proc/cpuinfo
+  ```
+  returns the following:
+  ```
+  model name	: Intel(R) Core(TM) i7-4710MQ CPU @ 2.50GHz
+  ```
 
 ## SSH
 
