@@ -166,9 +166,13 @@ We can see the IP address is: ``192.168.78.128``.
 
 ## SSH
 
+Try:
+
 ``` bash
 ping 10.9.8.2
 ```
+
+If it does not work from you virtual machine (VMware)
 ``` bash
 ssh root@10.9.8.2
 ```
