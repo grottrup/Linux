@@ -156,7 +156,7 @@ ens33: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
         TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
 ...
 ```
-We can see the IP address ``192.168.78.128``???
+We can see the IP address is: ``192.168.78.128``.
 
 * Explain what the ﬁle /var/log/syslog does
 * Try using running less /var/log/syslog and read the manual for less. What is it good for?
