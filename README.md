@@ -113,7 +113,13 @@
 
 * Now, write a small shell script that echos "hello world" every second. Search for bash-scripts, while-do, sleep and echo. Remember to make your shell script executable using the program chmod.
 
-
+``` bash
+while true
+do
+        echo "hello world"
+        sleep 1
+done
+```
 
 * Which chmod command?
 * Shell script?
@@ -164,6 +170,7 @@ We can see the IP address is: ``192.168.78.128``.
   Less opens the log for viewing in the terminal, which is especially cool for communicating with other devices such as the Raspberry Pi. A cool thing about Less is that it doesn\'t read the whole file at once, but only a certain amount of lines.
 
 * What happens when you run dmesg?
+
   We see the kernel ring buffer - a buffer containing messages relating to the kernel.
    
 * Extending the above like this: dmesg|less, what does it do?
