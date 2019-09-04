@@ -192,6 +192,7 @@ We can see the IP address is: ``192.168.78.128``.
   We see the kernel ring buffer - a buffer containing messages relating to the kernel.
    
 * Extending the above like this: dmesg|less, what does it do?
+  
   It opens the kernel ring buffer in less, which makes it easier to navigate.
 
 * Determine the CPU type by looking the directory /proc
@@ -226,4 +227,22 @@ Now it is possible to run commands on the Raspberry Pi. To copy the previously c
 
 ``` bash
 scp stud@10.9.8.1:/home/stud/helloworld.sh ~
+```
+
+Start the script and optionally add ``&`` to get the number of the process:
+
+``` bash
+./helloworld.sh &
+```
+
+Kill the process with something like:
+
+``` bash
+kill -9 351
+```
+
+Alternatively you can find the process number with:
+
+```
+ps -e
 ```
