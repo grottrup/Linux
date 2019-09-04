@@ -172,7 +172,10 @@ Try:
 ping 10.9.8.2
 ```
 
-If it does not work from you virtual machine (VMware)
+If it does not work from you virtual machine (VMware) select: Player > Removeable Devices > Netchip RNDIS/Ethernet Gadget
+
+Attempt to ping againg once you have connected the device to the virtual machine.
+
 ``` bash
 ssh root@10.9.8.2
 ```
