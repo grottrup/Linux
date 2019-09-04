@@ -113,7 +113,25 @@
 
 * Now, write a small shell script that echos "hello world" every second. Search for bash-scripts, while-do, sleep and echo. Remember to make your shell script executable using the program chmod.
 
+* Which chmod command?
+
+To make the script executeable run:
+
 ``` bash
+chmod a+x helloworld.sh
+```
+
+After executing the chmod it should be possible to run:
+
+``` bash
+./helloworld.sh
+```
+
+* Shell script?
+
+``` bash
+#!/bin/bash
+
 while true
 do
         echo "hello world"
@@ -121,9 +139,9 @@ do
 done
 ```
 
-* Which chmod command?
-* Shell script?
 * How do you terminate it?
+
+Press ```Ctrl+C``.
 
 ## Acquiring system information
 
