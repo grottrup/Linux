@@ -176,9 +176,13 @@ If it does not work from you virtual machine (VMware) select: Player > Removeabl
 
 Attempt to ping againg once you have connected the device to the virtual machine.
 
+To connect as the root user at the Raspberry Pi run the following command:
+
 ``` bash
 ssh root@10.9.8.2
 ```
+
+Now it is possible to run commands on the Raspberry Pi. To copy the previously created file from the virtual machine run the following command:
 
 ``` bash
 scp stud@10.9.8.1:/home/stud/hello.txt ~
