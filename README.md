@@ -207,5 +207,5 @@ ssh root@10.9.8.2
 Now it is possible to run commands on the Raspberry Pi. To copy the previously created file from the virtual machine run the following command:
 
 ``` bash
-scp stud@10.9.8.1:/home/stud/hello.txt ~
+scp stud@10.9.8.1:/home/stud/helloworld.sh ~
 ```
