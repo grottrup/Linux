@@ -72,7 +72,19 @@ int main(int argc, char *argv[])
     printf("hello");
 }
 ```
+Create the exe file on the virtual machine:
 
 ``` bash
-scp stud@10.9.8.1:/home/stud/Desktop/ledblink.c ~
+arm-rpizw-gcc -o ledblink ledblink.c
+```
+
+Copy the exe file to the Raspberry Pi:
+
+``` bash
+scp stud@10.9.8.1:/home/stud/Desktop/ledblink ~
+```
+
+Run it:
+``` bash
+./ledblink
 ```
