@@ -72,3 +72,7 @@ int main(int argc, char *argv[])
     printf("hello");
 }
 ```
+
+``` bash
+scp stud@10.9.8.1:/home/stud/Desktop/ledblink.c ~
+```
