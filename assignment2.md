@@ -62,15 +62,33 @@ echo 1 > /sys/class/gpio/gpio26/value
 idk some headers
 
 ``` c
-#include <ctype.h>
-#include <fcntl.h>
-#include <sys/stat.h>
+#include <unistd.h>
 #include <stdio.h>
+#include <fcntl.h>
+#include <errno.h>
+#include <string.h>
+#include <time.h>
 
 int main(int argc, char *argv[])
 {
-    printf("hello");
+  int fd, num_wr;
+  
+  char buffer[] ="1";
+  char buffer2[] = "0";
+  fd=open("/sys/class/gpio/gpio26/value", O_RDWR | O_CREAT, S_IRUSR|S_IWUSR);
+  
+    while(1)
+    {
+      num_wr=write(fd, buffer, 1);
+      
+      sleep(1);
+      
+      num_wr=write(fd, buffer2, 1);
+
+      sleep(1);
+    }
 }
+
 ```
 Create the exe file on the virtual machine:
 
@@ -88,3 +106,5 @@ Run it:
 ``` bash
 ./ledblink
 ```
+
+
