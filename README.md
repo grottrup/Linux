@@ -1,4 +1,4 @@
-# Linux
+# Assignment 1
 ## File & Directory operations
 
 * Display the full path of the current folder?
