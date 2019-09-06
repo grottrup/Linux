@@ -50,3 +50,13 @@ echo out > /sys/class/gpio/gpio26/direction
 cat /sys/class/gpio/gpio26/direction
 out
 ```
+
+To make the LED light up run:
+
+``` bash
+echo 1 > /sys/class/gpio/gpio26/value
+```
+
+### d
+
+
