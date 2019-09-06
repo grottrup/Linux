@@ -26,3 +26,27 @@ When pressing the key:
 root@raspberrypi0-wifi:~# cat /sys/class/gpio/gpio12/value
 0
 ```
+
+### c
+
+LED0 ``GPIO26``
+
+``` bash
+echo 26 > /sys/class/gpio/export
+```
+
+``` bash
+cat /sys/class/gpio/gpio26/direction
+in
+```
+
+To change this to out do the following:
+
+``` bash
+echo out > /sys/class/gpio/gpio26/direction
+```
+
+``` bash
+cat /sys/class/gpio/gpio26/direction
+out
+```
