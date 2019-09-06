@@ -59,4 +59,16 @@ echo 1 > /sys/class/gpio/gpio26/value
 
 ### d
 
+idk some headers
 
+``` c
+#include <ctype.h>
+#include <fcntl.h>
+#include <sys/stat.h>
+#include <stdio.h>
+
+int main(int argc, char *argv[])
+{
+    printf("hello");
+}
+```
