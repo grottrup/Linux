@@ -2,7 +2,9 @@
 
 ### 
 
-SWT: 12, 16
+### a) Setup and check fHAT switch
+
+SWT: ``GPIO12``, ``GPIO16``
 
 ``` bash
 echo 12 > /sys/class/gpio/export
@@ -13,7 +15,7 @@ cat /sys/class/gpio/gpio12/direction
 in
 ```
 
-### b
+### b) Test clicking the switch
 
 ``` bash
 root@raspberrypi0-wifi:~# cat /sys/class/gpio/gpio12/value     
@@ -27,9 +29,9 @@ root@raspberrypi0-wifi:~# cat /sys/class/gpio/gpio12/value
 0
 ```
 
-### c
+### c) Setup LED as output
 
-LED0 ``GPIO26``
+LED0: ``GPIO26``
 
 ``` bash
 echo 26 > /sys/class/gpio/export
@@ -57,7 +59,7 @@ To make the LED light up run:
 echo 1 > /sys/class/gpio/gpio26/value
 ```
 
-### d
+### d) Write C blinker program
 
 idk some headers
 
